@@ -1,0 +1,65 @@
+Nama : Rohadatul Aisyi Fatikha
+Kelas : 2C
+NIM : 21090077
+SUBJECT : JAWABAN TEORI UAS ALGORITMA
+# No 1 
+    # memasukkan SIGRA (6536) berada dalam level 4 input dalam akar atau sebagai key. lalu input semua data dan mencari root dari data yang disajikan 
+            6536
+              \
+                6538
+                  \
+                    7362
+                     \ 
+                       8824
+    seperti berikut 
+    public static void main(String[] args) {
+        Node root = null;
+        root = insert(root, 6536);
+        insert(root,5376);
+        insert(root,5647);
+        insert(root,6384);
+        insert(root,6538);
+        insert(root,7362);
+        insert(root,8824);
+        inorder(root);
+
+# No 2
+    # Data nilai yang berisikan 2,18,1,0,56,76,98,34,12 dibagi kedalam array menjadi dua bagian
+    kemudian menentukan posisi left dan right, start dan end menggunakan tipe datanya int
+    selanjutnya pivot ditempatkan pada left atau right, jika pivot lebih dari right maka digerakkan ke kanan
+    jika pivot kurang dari left maka right digerakkan ke kiri.
+    mulai dari elemen paling kiri dan melacak indeks elemen yang lebih kecil (atau sama dengan) sebagai i.
+    Saat melintasi, jika kita menemukan elemen yang lebih kecil, kita menukar elemen saat ini dengan arr[i].
+    Jika tidak, kita abaikan elemen saat ini.
+
+ private int partition (int start, int end ) {
+int pivot = this.data[end];
+int i = (start - 1);
+for (int j = start; j <= end - 1; j++){
+i++;
+int t = this.data[i];
+this.data[i] = this.data
+this.data[j] = t;
+
+ }
+}
+
+int t = this.data[i+1];
+this.data[i+1] = this.data[end];
+thisdata[end] = t;
+return (i+1);
+}
+
+perhitungan urutan pada p = 5
+p=5
+if (a [p] <76)
+a (5) < 76 
+76 < 76
+int t = a [i+1] -> t = a [3+1]
+		t = a [4];
+		t = 0;
+a[i+1] = a [end] -> a [4] = a [5]
+		= [4] = 76;
+a [end] = t -> a (5) = 0;
+return [i+i] -> return 4;
+a = 2,18,1,0,76,56,98,34,12
